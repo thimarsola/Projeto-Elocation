@@ -1025,7 +1025,7 @@ body {
 }
 
 .pb-s {
-  padding-bottom: calc(var(--fs-100) * 17);
+  padding-bottom: calc(var(--fs-100) * 15);
 }
 
 .radius {
@@ -1106,8 +1106,8 @@ body {
   transition: all 300ms ease-in-out;
 }
 .btn-primary-500:hover {
-  background-color: #ed6a00;
-  border-color: #ed6a00;
+  background-color: #dd6300;
+  border-color: #dd6300;
   transition: all 300ms ease-in-out;
 }
 
@@ -1131,8 +1131,8 @@ body {
   transition: all 300ms ease-in-out;
 }
 .btn-light-gray-500:hover {
-  background-color: #ebebeb;
-  border-color: #ebebeb;
+  background-color: #e4e4e4;
+  border-color: #e4e4e4;
   transition: all 300ms ease-in-out;
 }
 
@@ -1143,8 +1143,8 @@ body {
   transition: all 300ms ease-in-out;
 }
 .btn-dark-gray-500:hover {
-  background-color: #171a1a;
-  border-color: #171a1a;
+  background-color: #101212;
+  border-color: #101212;
   transition: all 300ms ease-in-out;
 }
 
@@ -1168,8 +1168,8 @@ body {
   transition: all 300ms ease-in-out;
 }
 .btn-whatsapp-500:hover {
-  background-color: #21bd5c;
-  border-color: #21bd5c;
+  background-color: #1fb055;
+  border-color: #1fb055;
   transition: all 300ms ease-in-out;
 }
 

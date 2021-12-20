@@ -5,4 +5,4 @@
 @use 'components';
 @use 'layouts';
 @use 'pages/home/index';
-@import "~sweetalert2/dist/sweetalert2.css";
+@use "vendors/sweetalert2.css";

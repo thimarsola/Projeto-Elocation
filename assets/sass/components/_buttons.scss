@@ -67,8 +67,8 @@
                 @include transition(all);
 
                 &:hover {
-                    background-color: darken($value, 5%);
-                    border-color: darken($value, 5%);
+                    background-color: darken($value, 8%);
+                    border-color: darken($value, 8%);
                     @include transition(all);
                 }
             }
