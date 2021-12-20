@@ -1,0 +1,72 @@
+@use "../../abstracts" as *;
+
+.manpower{
+  &__row{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    //align-items: stretch;
+    flex-wrap: nowrap;
+    gap: 0;
+
+    &__content{
+      flex-basis: 55%;
+      height: 100%;
+      margin-top: auto;
+    }
+
+    &__image{
+      margin-top: -8rem;
+      flex-basis: calc(100% - 55%);
+      width: 100%;
+      min-height: calc(100% + 8rem);
+    }
+  }
+
+  //breakpoint 1024px
+  @include bp(1024px){
+    &__row{
+      &__content{
+        padding: var(--fs-1000) var(--fs-500);
+
+        &__header{
+          h2{
+            font-size: var(--fs-600);
+          }
+        }
+      }
+    }
+  }
+
+  //breakpoint tablet
+  @include mq(md){
+    &__row{
+      &__content{
+        &__header{
+          h2{
+            font-size: var(--fs-500);
+          }
+        }
+      }
+    }
+  }
+
+  //breakpoint mobile
+  @include mq(sm){
+    &__row{
+      flex-wrap: wrap;
+
+      &__content{
+        flex-basis: 100%;
+      }
+
+      &__image{
+        margin-left: auto;
+        margin-top: -20px;
+        flex-basis: calc(100% - 24px);
+        height: 30rem;
+        box-shadow: 0 0 30px rgba(#000, .15);
+      }
+    }
+  }
+}

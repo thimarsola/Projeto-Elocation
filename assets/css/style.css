@@ -1719,6 +1719,53 @@ body {
   }
 }
 
+.manpower__row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  gap: 0;
+}
+.manpower__row__content {
+  flex-basis: 55%;
+  height: 100%;
+  margin-top: auto;
+}
+.manpower__row__image {
+  margin-top: -8rem;
+  flex-basis: 45%;
+  width: 100%;
+  min-height: calc(100% + 8rem);
+}
+@media only screen and (max-width: 1024px) {
+  .manpower__row__content {
+    padding: var(--fs-1000) var(--fs-500);
+  }
+  .manpower__row__content__header h2 {
+    font-size: var(--fs-600);
+  }
+}
+@media only screen and (max-width: 768px) {
+  .manpower__row__content__header h2 {
+    font-size: var(--fs-500);
+  }
+}
+@media only screen and (max-width: 576px) {
+  .manpower__row {
+    flex-wrap: wrap;
+  }
+  .manpower__row__content {
+    flex-basis: 100%;
+  }
+  .manpower__row__image {
+    margin-left: auto;
+    margin-top: -20px;
+    flex-basis: calc(100% - 24px);
+    height: 30rem;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.15);
+  }
+}
+
 .swal2-popup.swal2-toast {
   box-sizing: border-box;
   grid-column: 1/4 !important;
