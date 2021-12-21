@@ -30,7 +30,7 @@
                        <!-- body -->
                         <div class="categories__row__card__content__body">
                             <p class="mb-2">Conheça a nossa linha de equipamentos para segurança do trabalho.</p>
-                            <a href="<?= get_the_permalink(get_page_by_title('Segurança do Trabalho')); ?>" class="link-neutral-500" title="Conheça a nossa linha de equipamento para Segurança do Trabalho">
+                            <a href="<?= get_the_permalink(get_page_by_title('Segurança do Trabalho')); ?>" class="link-dark-gray-500 d-inline" title="Conheça a nossa linha de equipamento para Segurança do Trabalho">
                                 <span class="d-flex ai-center">
                                     Saiba mais
                                     <i class="icon-arrow-right ml-1"></i>
@@ -64,7 +64,7 @@
                        <!-- body -->
                         <div class="categories__row__card__content__body">
                             <p class="mb-2">Conheça a nossa linha de equipamentos para segurança do trabalho.</p>
-                            <a href="<?= get_the_permalink(get_page_by_title('Meio Ambiente')); ?>" class="link-neutral-500" title="Conheça a nossa linha de equipamento para Segurança do Trabalho">
+                            <a href="<?= get_the_permalink(get_page_by_title('Meio Ambiente')); ?>" class="link-dark-gray-500 d-inline" title="Conheça a nossa linha de equipamento para Segurança do Trabalho">
                                 <span class="d-flex ai-center">
                                     Saiba mais
                                     <i class="icon-arrow-right ml-1"></i>
@@ -98,7 +98,7 @@
                        <!-- body -->
                         <div class="categories__row__card__content__body">
                             <p class="mb-2">Conheça os nossos diversos equipamentos para monitoramento e análises.</p>
-                            <a href="<?= get_the_permalink(get_page_by_title('Outros')); ?>" class="link-neutral-500" title="Conheça a nossa linha de equipamento para Segurança do Trabalho">
+                            <a href="<?= get_the_permalink(get_page_by_title('Outros')); ?>" class="link-dark-gray-500 d-inline" title="Conheça a nossa linha de equipamento para Segurança do Trabalho">
                                 <span class="d-flex ai-center">
                                     Saiba mais
                                     <i class="icon-arrow-right ml-1"></i>

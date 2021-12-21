@@ -476,7 +476,6 @@ body {
 }
 
 .d-inline {
-  width: 100%;
   display: inline-block;
 }
 
@@ -540,6 +539,10 @@ body {
 
 .f-10 {
   font-size: calc(var(--fs-100) * 10);
+}
+
+.f-bold {
+  font-family: var(--bold) !important;
 }
 
 .gp-1 {
@@ -1763,6 +1766,71 @@ body {
     flex-basis: calc(100% - 24px);
     height: 30rem;
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.15);
+  }
+}
+
+.highlight__row__card {
+  display: flex;
+  flex-flow: column;
+}
+.highlight__row__card__thumbnail {
+  height: 20rem;
+  border-bottom: 3px solid var(--clr-primary-500);
+}
+.highlight__row__card__thumbnail img {
+  margin: 0 auto;
+  height: 100%;
+}
+.highlight__row__card__content {
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  gap: var(--fs-400);
+}
+.highlight__row__card__content__header ul {
+  gap: 8px;
+}
+.highlight__row__card__content__header ul li {
+  font-size: 12px;
+}
+.highlight__row__card__content__header ul li:not(:last-child)::after {
+  content: "";
+  padding: 0 4px;
+  border-right: 1.5px solid #ffcba0;
+}
+.highlight__row__card__content__header h3 {
+  font-size: 2rem;
+}
+.highlight__row__card__content__body a {
+  line-height: 1.1 !important;
+}
+.highlight__row__card__content__body a:hover span i {
+  transform: scaleX(1);
+  transition: transform 300ms ease-in-out;
+}
+.highlight__row__card__content__body a span i {
+  transform-origin: left;
+  transform: scaleX(0);
+  transition: transform 300ms ease-in-out;
+}
+.highlight__content a {
+  line-height: 1.1 !important;
+}
+@media only screen and (max-width: 768px) {
+  .highlight__header h2 {
+    font-size: var(--fs-500);
+  }
+}
+@media only screen and (max-width: 576px) {
+  .highlight__header p {
+    font-size: 2rem;
+  }
+  .highlight__row__card__thumbnail {
+    height: 25rem;
+  }
+  .highlight__row__card__content__header h3 {
+    font-size: var(--fs-300);
   }
 }
 

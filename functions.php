@@ -36,3 +36,7 @@ require_once get_template_directory() . '/inc/ThemeSupport.php';
 
 //CUSTOM TITLE
 require_once get_template_directory() . '/inc/Title.php';
+
+//CUSTOM POST TYPE
+require_once get_template_directory() . '/inc/Products.php';
+require_once get_template_directory() . '/inc/Categories.php';

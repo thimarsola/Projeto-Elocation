@@ -374,7 +374,6 @@ body {
 }
 
 .d-inline {
-  width: 100%;
   display: inline-block;
 }
 
@@ -438,6 +437,10 @@ body {
 
 .f-10 {
   font-size: calc(var(--fs-100) * 10);
+}
+
+.f-bold {
+  font-family: var(--bold) !important;
 }
 
 .gp-1 {
