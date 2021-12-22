@@ -1,0 +1,147 @@
+@use "../../abstracts" as *;
+
+.about{
+
+  &__row{
+    grid-template-columns: max(35rem) 1fr max(25.5rem);
+
+    &__content{
+      &__highlight{
+        font-size: 2rem;
+      }
+    }
+
+    &__image{
+      position: relative;
+
+      &::after{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: max(21.5rem);
+        height: max(40rem);
+        content: '';
+        background: var(--clr-primary-500);
+        z-index: 0;
+      }
+
+      &__container{
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: calc(100% - 4.5rem);
+        height: calc(100% - 7.2rem);
+        z-index: 1;
+      }
+    }
+
+    &__pillars{
+      display: flex;
+      flex-direction: column;
+      gap: var(--fs-400);
+
+      &__card{
+        &__header{
+          gap: var(--fs-100);
+
+          span{
+            width: 8px;
+            height: 8px;
+            background: var(--clr-primary-500);
+            border-radius: 50%;
+            line-height: 1.1!important;
+          }
+
+          h3{
+            font-size: 2rem;
+          }
+        }
+
+        &__body{
+          padding-left: var(--fs-200);
+          font-size: 12px;
+          text-align: justify;
+        }
+      }
+    }
+  }
+
+
+
+  //breakpoint tablet
+  @include mq(md){
+    &__header{
+      h2{
+        font-size: var(--fs-500);
+      }
+    }
+
+    &__row{
+      grid-template-columns: repeat(2, 1fr);
+
+      &__pillars{
+        padding-top: var(--fs-400);
+        grid-column: 1/-1;
+        flex-direction: row;
+        gap: calc(var(--gap) * 2);
+
+        &__card{
+          flex-basis: 33.333%;
+
+          &__body{
+            padding-left: 0;
+          }
+        }
+      }
+    }
+  }
+
+  //breakpoint mobile
+  @include mq(sm){
+    &__header{
+      p{
+        font-size: 2rem;
+      }
+
+      h2{
+        font-size: var(--fs-400);
+      }
+    }
+
+    &__row{
+      grid-template-columns: 1fr;
+      gap: calc(var(--gap) * 3);
+
+      &__image{
+        width: 100%;
+        height: 32rem;
+        order: -1;
+
+        &::after{
+          width: calc(100% - 4.5rem);
+          height: calc(100% - 4.5rem);
+        }
+
+        &__container{
+          position: absolute;
+          top: 0;
+          right: 0;
+          width: calc(100% - 4.5rem);
+          height: calc(100% - 4.5rem);
+          z-index: 1;
+        }
+      }
+
+      &__pillars{
+        padding-top: 0;
+        flex-wrap: wrap;
+
+        &__card{
+          padding: var(--fs-300);
+          flex-basis: 100%;
+          background: var(--clr-light-gray-500);
+        }
+      }
+    }
+  }
+}
