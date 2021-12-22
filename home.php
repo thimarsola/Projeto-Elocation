@@ -28,4 +28,8 @@
 <?php get_template_part('template-parts/home/home', 'contact'); ?>
 <!-- end of contact -->
 
+<!-- doubts -->
+<?php get_template_part('template-parts/home/home', 'doubts'); ?>
+<!-- end of doubts -->
+
 <?php get_footer(); ?>

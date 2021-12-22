@@ -2161,6 +2161,47 @@ body {
   transition: all 300ms ease-in-out;
 }
 
+.doubts__row__image {
+  position: relative;
+  width: 100%;
+  height: 40rem;
+}
+.doubts__row__image::after {
+  display: block;
+  width: calc(100% - 4rem);
+  height: 100%;
+  content: "";
+  background-image: url("../images/imagem-cta.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.doubts__row__image__icon {
+  position: absolute;
+  bottom: 4rem;
+  right: 0;
+  width: 13.5rem;
+  height: 13.5rem;
+}
+.doubts__row__content {
+  align-self: flex-end;
+}
+@media only screen and (max-width: 1024px) {
+  .doubts__row__content__header h2 {
+    font-size: var(--fs-400);
+  }
+}
+@media only screen and (max-width: 576px) {
+  .doubts__row {
+    gap: calc(var(--gap) * 3);
+  }
+  .doubts__row__image {
+    height: 35rem;
+  }
+  .doubts__row__content__header h2 {
+    font-size: 3.6rem;
+  }
+}
+
 .swal2-popup.swal2-toast {
   box-sizing: border-box;
   grid-column: 1/4 !important;
