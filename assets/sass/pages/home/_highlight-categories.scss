@@ -1,0 +1,127 @@
+@use "../../abstracts" as *;
+
+.highlight_categories{
+  position: relative;
+  min-height: 72rem;
+
+  &::after{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: '';
+    background: rgba(#3F3F3F, .5);
+    z-index: 1;
+  }
+
+  &__background{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+  }
+
+  &__row{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    z-index: 2;
+
+    &__card{
+      flex-basis: 33.333%;
+      display: flex;
+      flex-flow: column;
+      justify-content: flex-end;
+
+      &:not(:last-child){
+        border-right: 4px solid rgba(#fff, .2);
+      }
+
+      &__content{
+        padding: var(--fs-1000);
+        width: 100%;
+        background: rgba(#232828, .5);
+        color: var(--clr-white-500);
+
+        &:hover{
+          cursor: pointer;
+        }
+
+        &__header{
+          p{
+            font-family: var(--bold) !important;
+            line-height: 1.1 !important;
+          }
+
+          h3{
+            color: var(--clr-white-500);
+          }
+        }
+
+        &__body{
+          display: none;
+        }
+      }
+
+      &--active{
+        .highlight_categories__row__card__content{
+          background: var(--clr-primary-500);
+
+          &__body{
+            display: block;
+          }
+        }
+      }
+    }
+  }
+
+  //breakpoint 1366px
+  @include bp(1366px){
+    &__row{
+      &__card{
+        &__content{
+          padding: var(--fs-1000) var(--fs-600);
+        }
+      }
+    }
+  }
+
+  //breakpoint tablet
+  @include mq(md){
+    &__row{
+      &__card{
+        &__content{
+          padding: var(--fs-1000) var(--fs-400);
+        }
+      }
+    }
+  }
+
+  //breakpoint mobile
+  @include mq(sm){
+    &__row{
+      position: relative;
+      flex-flow: initial;
+      flex-direction: column;
+
+      &__card{
+        flex-basis: 100%;
+
+        &:not(:last-child){
+          border-right: none;
+          border-bottom: 4px solid rgba(#fff, .2);
+        }
+
+        &__content{
+          padding: var(--fs-1000) var(--fs-400);
+        }
+      }
+    }
+  }
+}

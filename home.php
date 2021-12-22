@@ -16,4 +16,8 @@
 <?php get_template_part('template-parts/home/home', 'highlight'); ?>
 <!-- end of highlight -->
 
+<!-- highlight categories -->
+<?php get_template_part('template-parts/home/home', 'highlight-categories'); ?>
+<!-- end of highlight categories -->
+
 <?php get_footer(); ?>

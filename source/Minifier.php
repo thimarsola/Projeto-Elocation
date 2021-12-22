@@ -37,6 +37,7 @@ $homeJs->add(dirname(__DIR__, 1) . "/assets/js/vendors/jquery.js");
 $homeJs->add(dirname(__DIR__, 1) . "/assets/js/theme/functions/menu.js");
 $homeJs->add(dirname(__DIR__, 1) . "/assets/js/theme/functions/scroll.js");
 $homeJs->add(dirname(__DIR__, 1) . "/assets/js/theme/functions/toggle.js");
+$homeJs->add(dirname(__DIR__, 1) . "/assets/js/theme/home/categories.js");
 $homeJs->add(dirname(__DIR__, 1) . "/assets/js/vendors/sweetalert2.all.js");
 $homeJs->add(dirname(__DIR__, 1) . "/assets/js/theme/home/request.js");
 $homeJs->minify(dirname(__DIR__, 1) . "/assets/js/script-home.min.js");
