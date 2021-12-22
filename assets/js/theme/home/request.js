@@ -2,7 +2,7 @@
 
 $(document).ready(function () {
     const path = $(location).attr("href");
-    const file = 'wp-content/themes/bfendodontia/source/Support/Sender.php';
+    const file = 'wp-content/themes/elocation/source/Support/Sender.php';
 
     $('#form').submit(function () {
         $(".contact__row__form__status").removeClass("d-none");

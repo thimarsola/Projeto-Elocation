@@ -19,8 +19,8 @@
 }
 @font-face {
   font-family: "icon";
-  src: url("../font/icon/fonts/icon.eot?ft4vz1");
-  src: url("../font/icon/fonts/icon.eot?ft4vz1#iefix") format("embedded-opentype"), url("../font/icon/fonts/icon.ttf?ft4vz1") format("truetype"), url("../font/icon/fonts/icon.woff?ft4vz1") format("woff"), url("../font/icon/fonts/icon.svg?ft4vz1#icon") format("svg");
+  src: url("../font/icon/fonts/icon.eot?e34hvc");
+  src: url("../font/icon/fonts/icon.eot?e34hvc#iefix") format("embedded-opentype"), url("../font/icon/fonts/icon.ttf?e34hvc") format("truetype"), url("../font/icon/fonts/icon.woff?e34hvc") format("woff"), url("../font/icon/fonts/icon.svg?e34hvc#icon") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -37,6 +37,14 @@ i {
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-others:before {
+  content: "\e90b";
+}
+
+.icon-spinner:before {
+  content: "\e911";
 }
 
 .icon-arrow-downward:before {
@@ -81,10 +89,6 @@ i {
 
 .icon-mail:before {
   content: "\e90a";
-}
-
-.icon-others:before {
-  content: "\e90b";
 }
 
 .icon-phone:before {
@@ -224,12 +228,11 @@ textarea {
   height: 100%;
   padding: var(--fs-200);
   font-family: var(--regular) !important;
-  color: var(--clr-gray-500) !important;
+  color: var(--clr-neutral-500) !important;
   line-height: 1.5;
   border: none;
-  border-bottom: 2px solid var(--clr-gray-500);
   border-radius: 0;
-  background: none;
+  background: #F4F4F4;
   transform: scale(1);
   -webkit-appearance: none !important;
   -webkit-border-radius: 0 !important;
@@ -246,31 +249,19 @@ textarea::-webkit-input-placeholder {
 }
 input::-moz-placeholder,
 textarea::-moz-placeholder {
-  font-family: var(--t-medium);
-  font-size: var(--fs-200) !important;
-  text-transform: uppercase;
-  color: var(--clr-gray-500);
+  font-size: 1.4rem !important;
 }
 input:-ms-input-placeholder,
 textarea:-ms-input-placeholder {
-  font-family: var(--t-medium);
-  font-size: var(--fs-200) !important;
-  text-transform: uppercase;
-  color: var(--clr-gray-500);
+  font-size: 1.4rem !important;
 }
 input::-ms-input-placeholder,
 textarea::-ms-input-placeholder {
-  font-family: var(--t-medium);
-  font-size: var(--fs-200) !important;
-  text-transform: uppercase;
-  color: var(--clr-gray-500);
+  font-size: 1.4rem !important;
 }
 input::placeholder,
 textarea::placeholder {
-  font-family: var(--t-medium);
-  font-size: var(--fs-200) !important;
-  text-transform: uppercase;
-  color: var(--clr-gray-500);
+  font-size: 1.4rem !important;
 }
 input:focus,
 textarea:focus {
@@ -288,7 +279,7 @@ textarea::placeholder {
 }
 
 textarea {
-  min-height: 15rem;
+  height: 15rem;
   resize: none;
 }
 
@@ -1254,8 +1245,9 @@ body {
   transition: all 300ms ease-in-out;
 }
 .btn-dark-gray-500:hover {
-  background-color: #101212;
-  border-color: #101212;
+  color: var(--clr-white-500);
+  background-color: var(--clr-primary-500);
+  border-color: var(--clr-primary-500);
   transition: all 300ms ease-in-out;
 }
 
@@ -2040,6 +2032,133 @@ body {
     flex-basis: 100%;
     background: var(--clr-light-gray-500);
   }
+}
+
+.contact {
+  background-image: url("../images/background-contato.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.contact__row {
+  grid-template-columns: 63.5rem 1fr;
+}
+.contact__row__form__header p {
+  font-size: 1.4rem;
+}
+.contact__row__form form {
+  grid-template-columns: repeat(2, 1fr);
+}
+.contact__row__form__group:nth-child(5) {
+  grid-column: 1/-1;
+}
+.contact__row__form__status, .contact__row__form__button {
+  grid-column: 1/-1;
+}
+.contact__row__content {
+  display: grid;
+  place-items: center;
+}
+.contact__row__content__container p {
+  font-size: 1.4rem;
+}
+.contact__row__content__container__body__row {
+  display: flex;
+  gap: var(--fs-200);
+}
+.contact__row__content__container__body__row__card {
+  flex-basis: 33.333%;
+}
+.contact__row__content__container__body__row__card img {
+  height: var(--fs-600);
+}
+.contact__row__content__container__body__row__card__header h3 {
+  margin-bottom: var(--fs-100);
+  font-size: 1.8rem;
+}
+.contact__row__content__container__body__row__card__header hr {
+  width: var(--fs-500);
+  margin-left: 0;
+  margin-right: auto;
+  border: 1.5px solid var(--clr-white-500);
+  background: var(--clr-white-500);
+}
+@media only screen and (max-width: 1024px) {
+  .contact__row {
+    grid-template-columns: 2.5fr 1fr;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .contact__row {
+    grid-template-columns: 1fr;
+    gap: calc(var(--gap) * 4);
+  }
+  .contact__row__content {
+    order: -1;
+  }
+  .contact__row__content__container__header {
+    text-align: center;
+  }
+  .contact__row__content__container__body {
+    text-align: center;
+  }
+  .contact__row__content__container__body__row__card img {
+    margin: 0 auto;
+    height: var(--fs-800);
+  }
+  .contact__row__content__container__body__row__card__header br {
+    display: none;
+  }
+  .contact__row__content__container__body__row__card__header hr {
+    margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .contact__row__form {
+    padding: var(--fs-800) var(--fs-400);
+  }
+  .contact__row__form__button .btn {
+    width: 100%;
+    display: inline;
+  }
+  .contact__row__form form {
+    grid-template-columns: 1fr;
+  }
+  .contact__row__content {
+    order: -1;
+  }
+  .contact__row__content__container__header {
+    text-align: center;
+  }
+  .contact__row__content__container__header h2 {
+    font-size: 2.8rem;
+  }
+  .contact__row__content__container__body {
+    text-align: center;
+  }
+  .contact__row__content__container__body__row__card img {
+    margin: 0 auto;
+    height: var(--fs-800);
+  }
+  .contact__row__content__container__body__row__card__header br {
+    display: none;
+  }
+  .contact__row__content__container__body__row__card__header hr {
+    margin: 0 auto;
+  }
+}
+
+.swal2-loader {
+  border-color: var(--clr-primary-500) !important;
+  outline: none;
+}
+
+.swal2-styled.swal2-confirm {
+  background-color: var(--clr-primary-500) !important;
+  transition: all 300ms ease-in-out;
+}
+.swal2-styled.swal2-confirm:hover {
+  background-color: #d35e00 !important;
+  transition: all 300ms ease-in-out;
 }
 
 .swal2-popup.swal2-toast {

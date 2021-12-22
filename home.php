@@ -20,8 +20,12 @@
 <?php get_template_part('template-parts/home/home', 'highlight-categories'); ?>
 <!-- end of highlight categories -->
 
-<!-- highlight about -->
+<!-- about -->
 <?php get_template_part('template-parts/home/home', 'about'); ?>
-<!-- end of highlight about -->
+<!-- end of about -->
+
+<!-- contact -->
+<?php get_template_part('template-parts/home/home', 'contact'); ?>
+<!-- end of contact -->
 
 <?php get_footer(); ?>

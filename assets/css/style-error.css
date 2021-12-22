@@ -116,12 +116,11 @@ textarea {
   height: 100%;
   padding: var(--fs-200);
   font-family: var(--regular) !important;
-  color: var(--clr-gray-500) !important;
+  color: var(--clr-neutral-500) !important;
   line-height: 1.5;
   border: none;
-  border-bottom: 2px solid var(--clr-gray-500);
   border-radius: 0;
-  background: none;
+  background: #F4F4F4;
   transform: scale(1);
   -webkit-appearance: none !important;
   -webkit-border-radius: 0 !important;
@@ -138,31 +137,19 @@ textarea::-webkit-input-placeholder {
 }
 input::-moz-placeholder,
 textarea::-moz-placeholder {
-  font-family: var(--t-medium);
-  font-size: var(--fs-200) !important;
-  text-transform: uppercase;
-  color: var(--clr-gray-500);
+  font-size: 1.4rem !important;
 }
 input:-ms-input-placeholder,
 textarea:-ms-input-placeholder {
-  font-family: var(--t-medium);
-  font-size: var(--fs-200) !important;
-  text-transform: uppercase;
-  color: var(--clr-gray-500);
+  font-size: 1.4rem !important;
 }
 input::-ms-input-placeholder,
 textarea::-ms-input-placeholder {
-  font-family: var(--t-medium);
-  font-size: var(--fs-200) !important;
-  text-transform: uppercase;
-  color: var(--clr-gray-500);
+  font-size: 1.4rem !important;
 }
 input::placeholder,
 textarea::placeholder {
-  font-family: var(--t-medium);
-  font-size: var(--fs-200) !important;
-  text-transform: uppercase;
-  color: var(--clr-gray-500);
+  font-size: 1.4rem !important;
 }
 input:focus,
 textarea:focus {
@@ -180,7 +167,7 @@ textarea::placeholder {
 }
 
 textarea {
-  min-height: 15rem;
+  height: 15rem;
   resize: none;
 }
 
@@ -1146,8 +1133,9 @@ body {
   transition: all 300ms ease-in-out;
 }
 .btn-dark-gray-500:hover {
-  background-color: #101212;
-  border-color: #101212;
+  color: var(--clr-white-500);
+  background-color: var(--clr-primary-500);
+  border-color: var(--clr-primary-500);
   transition: all 300ms ease-in-out;
 }
 
