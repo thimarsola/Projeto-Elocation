@@ -22,7 +22,7 @@
                    <div class="categories__row__card__content p-4">
                        <!-- header -->
                         <header class="categories__row__card__content__header mb-2">
-                            <img src="<?= image('safety.svg', 'svg'); ?>" alt="Conheça a nossa linha de equipamentos para segurança do trabalho">
+                            <img src="<?= image('safety.svg', 'svg'); ?>" alt="Conheça a nossa linha de equipamentos para segurança do trabalho" loading="lazy">
                             <h3 class="f-3 mt-4">Segurança do Trabalho</h3>
                         </header>
                        <!-- end of header -->
@@ -56,7 +56,7 @@
                    <div class="categories__row__card__content p-4">
                        <!-- header -->
                         <header class="categories__row__card__content__header mb-2">
-                            <img src="<?= image('environment.svg', 'svg'); ?>" alt="Conheça a nossa linha de equipamentos para meio ambiente">
+                            <img src="<?= image('environment.svg', 'svg'); ?>" alt="Conheça a nossa linha de equipamentos para meio ambiente" loading="lazy">
                             <h3 class="f-3 mt-4">Meio Ambiente</h3>
                         </header>
                        <!-- end of header -->
@@ -90,7 +90,7 @@
                    <div class="categories__row__card__content p-4">
                        <!-- header -->
                         <header class="categories__row__card__content__header mb-2">
-                            <img src="<?= image('others.svg', 'svg'); ?>" alt="Conheça os nossos diversos equipamentos para monitoramento e análises.">
+                            <img src="<?= image('others.svg', 'svg'); ?>" alt="Conheça os nossos diversos equipamentos para monitoramento e análises." loading="lazy">
                             <h3 class="f-3 mt-4">Outros</h3>
                         </header>
                        <!-- end of header -->

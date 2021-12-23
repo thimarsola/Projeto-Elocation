@@ -12,12 +12,10 @@
 
     <title>
         <?php
-        if(is_home()){
-            echo SITE['name'] . ' | Locação de Equipamentos e Instrumentos de Medição';
+        if(is_home() || is_404() || is_search()){
+            echo SITE['title'];
         }elseif (is_category()){
             echo single_cat_title() . " - " . SITE["name"];;
-        }elseif (is_404()){
-            echo SITE['name'];
         }else{
             echo get_the_title() . " - " . SITE["name"];
         }
@@ -41,6 +39,8 @@
 
     <meta name="author" content="<?= SITE["name"]; ?> - <?= SITE["domain"]; ?>">
     <link rel="shortcut icon" href="<?= get_template_directory_uri(); ?>/assets/svg/favicon.svg">
+    <link rel="apple-touch-icon" href="<?= get_template_directory_uri(); ?>/assets/svg/favicon.svg">
+    <meta name="theme-color" content="#ffffff">
 
     <!-- OPEN GRAPH -->
     <meta property="og:locale" content="<?= SITE["locale"]; ?>"/>
@@ -63,7 +63,7 @@
 
     <!-- TWITTER -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:domain" content="<?= DEV['domain']; ?>"/>
+    <meta name="twitter:domain" content="<?= SITE['domain']; ?>"/>
     <meta name="twitter:title" content="<?= SITE["name"] ?>" />
     <meta name="twitter:description" content="<?= SITE["desc"]; ?>"/>
     <meta name="twitter:image" content="<?= get_template_directory_uri() . '/assets/images/' . SITE["image"]; ?>"/>
@@ -94,7 +94,7 @@
 <h1 class="d-none">
     <?php
         if(is_home() || is_404() || is_search()){
-            echo SITE['name'];
+            echo SITE['title'];
         }elseif(is_single()){
             echo SITE['name'] . " - " . get_the_title();
         }else{

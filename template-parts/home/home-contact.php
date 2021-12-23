@@ -89,7 +89,7 @@
                             <div class="contact__row__content__container__body__row mt-7">
                                 <!-- card -->
                                  <article class="contact__row__content__container__body__row__card">
-                                     <img src="<?= image('safety-white.svg', 'svg'); ?>" alt="Conheça a nossa linha de equipamentos para segurança do trabalho">
+                                     <img src="<?= image('safety-white.svg', 'svg'); ?>" alt="Conheça a nossa linha de equipamentos para segurança do trabalho" loading="lazy">
 
 
                                      <!-- header -->
@@ -103,7 +103,7 @@
 
                                 <!-- card -->
                                  <article class="contact__row__content__container__body__row__card">
-                                     <img src="<?= image('environment-white.svg', 'svg'); ?>" alt="Conheça os nossos diversos equipamentos para monitoramento e análises">
+                                     <img src="<?= image('environment-white.svg', 'svg'); ?>" alt="Conheça os nossos diversos equipamentos para monitoramento e análises" loading="lazy">
 
 
                                      <!-- header -->
@@ -117,7 +117,7 @@
 
                                 <!-- card -->
                                  <article class="contact__row__content__container__body__row__card">
-                                     <img src="<?= image('others-white.svg', 'svg'); ?>" alt="Conheça a nossa linha de equipamentos para segurança do trabalho">
+                                     <img src="<?= image('others-white.svg', 'svg'); ?>" alt="Conheça a nossa linha de equipamentos para segurança do trabalho" loading="lazy">
 
 
                                      <!-- header -->

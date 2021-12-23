@@ -16,7 +16,7 @@
 
          <!-- card -->
           <article class="highlight_categories__row__card highlight_categories__row__card--active">
-              <img class="d-none" src="<?= image('categoria-01.jpg') ?>" alt="Conheça essa nossa categoria de produtos">
+              <img class="d-none" src="<?= image('categoria-01.jpg') ?>" alt="Conheça essa nossa categoria de produtos" loading="lazy">
 
               <!-- content -->
                <div class="highlight_categories__row__card__content">
@@ -45,7 +45,7 @@
 
          <!-- card -->
           <article class="highlight_categories__row__card">
-              <img class="d-none" src="<?= image('categoria-02.jpg') ?>" alt="Conheça essa nossa categoria de produtos">
+              <img class="d-none" src="<?= image('categoria-02.jpg') ?>" alt="Conheça essa nossa categoria de produtos" loading="lazy">
 
               <!-- content -->
                <div class="highlight_categories__row__card__content">
@@ -74,7 +74,7 @@
 
          <!-- card -->
           <article class="highlight_categories__row__card">
-              <img class="d-none" src="<?= image('categoria-03.jpg') ?>" alt="Conheça essa nossa categoria de produtos">
+              <img class="d-none" src="<?= image('categoria-03.jpg') ?>" alt="Conheça essa nossa categoria de produtos" loading="lazy">
 
               <!-- content -->
                <div class="highlight_categories__row__card__content">

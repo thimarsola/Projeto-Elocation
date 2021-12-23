@@ -7,7 +7,7 @@
                   <!-- brand -->
                    <div class="header__information__row__brand">
                        <a href="<?= (is_home() ? '#home' : get_home_url()); ?>" title="<?= SITE["name"]; ?>">
-                           <img src="<?= image('logo-topo.svg', 'svg'); ?>" alt="<?= SITE["name"]; ?>">
+                           <img src="<?= image('logo-topo.svg', 'svg'); ?>" alt="<?= SITE["name"]; ?>" title="<?= SITE["name"]; ?>" loading="lazy">
                        </a>
                    </div>
                   <!-- end of brand -->
