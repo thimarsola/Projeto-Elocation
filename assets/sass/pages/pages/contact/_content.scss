@@ -1,0 +1,74 @@
+@use "../../../abstracts" as *;
+
+.contact__content{
+  &__row{
+    grid-template-columns: 1fr 2fr;
+
+    &__information{
+      &__card{
+        ul{
+          display: flex;
+          flex-direction: column;
+          gap: var(--fs-200);
+
+          li{
+            display: flex;
+            align-items: center;
+            line-height: 1.1!important;
+
+            a{
+              display: flex;
+              align-items: center;
+            }
+          }
+        }
+      }
+    }
+
+    &__form{
+      form{
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      &__group{
+        &:nth-child(5){
+          grid-column: 1/-1;
+        }
+      }
+
+      &__status, &__button{
+        grid-column: 1/-1;
+      }
+    }
+  }
+
+  //breakpoint mobile
+  @include mq(sm){
+    &__row{
+      grid-template-columns: 1fr;
+      gap: calc(var(--gap) * 4);
+
+      &__form{
+        form{
+          grid-template-columns: 1fr;
+        }
+      }
+    }
+  }
+}
+
+.swal2-loader {
+  border-color: var(--clr-primary-500) !important;
+  outline: none;
+}
+
+.swal2-styled.swal2-confirm {
+  background-color: var(--clr-primary-500) !important;
+  transition: all 300ms ease-in-out;
+
+
+  &:hover {
+    background-color: darken($primary, 10%) !important;
+    transition: all 300ms ease-in-out;
+  }
+}
