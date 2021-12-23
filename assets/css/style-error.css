@@ -1307,6 +1307,9 @@ body {
   flex-direction: row;
 }
 .pagination__nav__list__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 4rem;
   height: 4rem;
   font-size: var(--fs-200) !important;
@@ -1485,7 +1488,7 @@ body {
 }
 @media only screen and (max-width: 768px) {
   .header {
-    position: fixed;
+    position: sticky;
   }
   .header__information {
     padding: calc(var(--gap) * 2) 0;

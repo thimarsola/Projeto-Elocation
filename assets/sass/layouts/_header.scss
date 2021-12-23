@@ -195,7 +195,7 @@
 
   //breakpoint tablet
   @include mq(md){
-    position: fixed;
+    position: sticky;
 
     &__information{
       padding: calc(var(--gap) * 2) 0;

@@ -53,6 +53,8 @@
 
   //breakpoint mobile
   @include mq(sm){
+    padding-top: 0;
+
     &__row{
       flex-wrap: wrap;
 

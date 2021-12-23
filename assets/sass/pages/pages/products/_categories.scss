@@ -1,6 +1,6 @@
-@use "../../abstracts" as *;
+@use "../../../abstracts" as *;
 
-.categories{
+.products__categories{
   &__row{
     &__card{
       &__thumb{
@@ -61,14 +61,8 @@
     }
   }
 
-  //breakpoint mobile
+  //breakpoint tablet
   @include mq(sm){
-    &__header{
-      p{
-        font-size: 2rem;
-      }
-    }
-
     &__row{
       &__card{
         display: flex;
