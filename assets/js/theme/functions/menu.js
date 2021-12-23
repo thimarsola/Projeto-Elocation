@@ -1,5 +1,5 @@
 $(function () {
-    $('.header__navbar__section__toggle').on('click', function(e){
+    $('.header__information__row__toggle').on('click', function(e){
         $('.menu-item-has-children').find('ul').hide();
 
         const clicks = $(this).data('clicks');

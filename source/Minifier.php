@@ -35,6 +35,7 @@ $errorCss->minify(dirname(__DIR__, 1) . "/assets/css/style-error.min.css");
 $homeJs = new MatthiasMullie\Minify\JS();
 $homeJs->add(dirname(__DIR__, 1) . "/assets/js/vendors/jquery.js");
 $homeJs->add(dirname(__DIR__, 1) . "/assets/js/theme/functions/menu.js");
+$homeJs->add(dirname(__DIR__, 1) . "/assets/js/theme/functions/sticky.js");
 $homeJs->add(dirname(__DIR__, 1) . "/assets/js/theme/functions/scroll.js");
 $homeJs->add(dirname(__DIR__, 1) . "/assets/js/theme/functions/toggle.js");
 $homeJs->add(dirname(__DIR__, 1) . "/assets/js/theme/home/categories.js");

@@ -1,5 +1,5 @@
 $(function () {
-    const scrollLink = $('nav a[href^="#"], .hero a[href^="#"], .procedures a[href^="#"]').not($('.menu-item-has-children > a'));
+    const scrollLink = $('.header__information a[href^="#"], nav a[href^="#"], .hero a[href^="#"], .procedures a[href^="#"]').not($('.menu-item-has-children > a'));
     scrollLink.on('click', function (e) {
         e.preventDefault();
 

@@ -8,9 +8,9 @@ $('.highlight_categories__row__card').click(function (){
         items.removeClass(css);
         item.addClass(css);
 
-        background.fadeTo(200, 0.1, function (){
+        background.fadeTo(300, 0.1, function (){
             $(this).attr('src', item.find('img').attr('src'));
-            $(this).fadeTo(200, 1);
+            $(this).fadeTo(300, 1);
         });
     }
 })

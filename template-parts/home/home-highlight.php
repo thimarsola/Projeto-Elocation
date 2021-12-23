@@ -26,7 +26,7 @@
                     get_template_part('template-parts/home/content', 'products');
                 }
             } else {
-                echo '<p>' . _e('Não existem artigos publicados no momento') . '</p>';
+                echo '<p>' . _e('Não existem produtos publicados no momento') . '</p>';
             }
 
             wp_reset_postdata();

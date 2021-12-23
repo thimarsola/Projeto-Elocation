@@ -1,10 +1,15 @@
 $(function(){
-    $(window).on("scroll", function(){
-       if($(window).scrollTop()){
-           $('.header').addClass('header--sticky');
-       }
-       else{
-           $('.header').removeClass('header--sticky');
-       }
+    var $win = $(window);
+
+    $win.on('scroll', function (){
+        if($win.width() >= 769){
+            var $navbar = $('.header__navbar');
+
+            if($win.scrollTop() > 90){
+                $navbar.addClass('fixed');
+            }else{
+                $navbar.removeClass('fixed');
+            }
+        }
     });
 });
