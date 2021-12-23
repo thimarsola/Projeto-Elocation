@@ -1,1 +1,92 @@
 @use '../abstracts' as *;
+
+.footer{
+  &__content{
+    position: relative;
+    padding: 12rem 0 var(--fs-500) 0;
+    z-index: 0;
+
+    &__row{
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+      h2{
+        font-size: 1.8rem;
+        text-transform: uppercase;
+        color: var(--clr-white-500) !important;
+      }
+
+      li, p, a{
+        font-size: 12px;
+      }
+
+      .link-white-500{
+        &:hover{
+          color: var(--clr-primary-500);
+        }
+      }
+
+      &__brand{
+        i{
+          font-size: var(--fs-200) !important;
+        }
+
+      }
+
+      &__sitemap, &__contact{
+        li{
+          &:not(:last-child){
+            margin-bottom: var(--fs-100);
+          }
+        }
+      }
+
+      &__sitemap{
+        ul{
+          li{
+            a{
+              @include transition(color);
+
+              &:hover{
+                color: darken($primary, 10%);
+                @include transition(color);
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &__copyright{
+      border-top: 2px solid rgba(#ccc, .3);
+    }
+  }
+
+  &__developer{
+    &__row{
+      .link-white-500{
+        &:hover{
+          color: var(--clr-dark-gray-500);
+        }
+      }
+
+      &__validator{
+        a{
+          small{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+        }
+      }
+    }
+  }
+
+  //breakpoint tablet
+  @include mq(md){
+    &__content{
+      &__row{
+        gap: calc(var(--gap) * 3);
+      }
+    }
+  }
+}

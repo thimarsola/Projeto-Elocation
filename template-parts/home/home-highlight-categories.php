@@ -7,7 +7,7 @@
     
     <!-- background -->
      <div class="highlight_categories__background">
-         <img class="img-fluid" src="<?= image('categoria-01.jpg') ?>" alt="Conheça essa nossa categoria de produtos">
+         <img class="img-fluid" src="<?= image('categoria-01.jpg') ?>" alt="Conheça essa nossa categoria de produtos" loading="lazy">
      </div> 
     <!-- end of background -->
 
