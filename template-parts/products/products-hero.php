@@ -5,7 +5,7 @@
         <!-- header -->
          <header class="products__hero__header t-center">
              <?php
-                if(is_page('Produtos')){
+                if(is_page('Produtos') || is_search()){
                     $paragraph = 'Soluções em Segurança do Trabalho e Meio Ambiente';
                     $title = 'Locação de Equipamentos e Instrumentos de Medição';
                 }else{

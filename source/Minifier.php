@@ -18,9 +18,9 @@ $pagesCss->minify(dirname(__DIR__, 1) . "/assets/css/style-pages.min.css");
 /**
  * CSS SINGLE
  */
-//$singleCss = new MatthiasMullie\Minify\CSS();
-//$singleCss->add(dirname(__DIR__, 1) . "/assets/css/style-single.css");
-//$singleCss->minify(dirname(__DIR__, 1) . "/assets/css/style-single.min.css");
+$singleCss = new MatthiasMullie\Minify\CSS();
+$singleCss->add(dirname(__DIR__, 1) . "/assets/css/style-single.css");
+$singleCss->minify(dirname(__DIR__, 1) . "/assets/css/style-single.min.css");
 
 /**
  * 404
@@ -44,7 +44,7 @@ $homeJs->add(dirname(__DIR__, 1) . "/assets/js/theme/home/request.js");
 $homeJs->minify(dirname(__DIR__, 1) . "/assets/js/script-home.min.js");
 
 /**
- * js
+ * PAGES
  */
 $pagesJs = new MatthiasMullie\Minify\JS();
 $pagesJs->add(dirname(__DIR__, 1) . "/assets/js/vendors/jquery.js");
@@ -53,6 +53,7 @@ $pagesJs->add(dirname(__DIR__, 1) . "/assets/js/theme/functions/sticky.js");
 $pagesJs->add(dirname(__DIR__, 1) . "/assets/js/theme/functions/toggle.js");
 $pagesJs->add(dirname(__DIR__, 1) . "/assets/js/vendors/sweetalert2.all.js");
 $pagesJs->add(dirname(__DIR__, 1) . "/assets/js/theme/contact/request.js");
+$pagesJs->add(dirname(__DIR__, 1) . "/assets/js/theme/single/gallery.js");
 $pagesJs->minify(dirname(__DIR__, 1) . "/assets/js/script-pages.min.js");
 
 /**

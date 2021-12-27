@@ -10,7 +10,7 @@
 
          <form role="search" method="get" action="<?= esc_url(home_url('/')); ?>">
              <label for="search"></label>
-             <input type="search" id="search" name="s" value="<?= (isset($_GET['s']) ? $_GET['s'] : null); ?>" placeholder="Pesquisar..." required>
+             <input type="search" id="search-aside" name="s" value="<?= (isset($_GET['s']) ? $_GET['s'] : null); ?>" placeholder="Pesquisar..." required>
              <button type="submit" class="btn">
                  <i class="icon-search clr-neutral-500"></i>
              </button>

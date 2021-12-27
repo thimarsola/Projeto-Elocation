@@ -5,7 +5,7 @@ function loadCSS()
 {
     if(is_home()){
         wp_enqueue_style('style', get_template_directory_uri() . '/assets/css/style.min.css', [], '1.0.0', 'all');
-    }elseif(is_page()){
+    }elseif(is_page() || is_search()){
         wp_enqueue_style('pages', get_template_directory_uri() . '/assets/css/style-pages.min.css', [], '1.0.0', 'all');
     }elseif(is_single()){
         wp_enqueue_style('single', get_template_directory_uri() . '/assets/css/style-single.min.css', [], '1.0.0', 'all');

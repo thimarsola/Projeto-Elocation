@@ -37,13 +37,10 @@
   @include mq(md) {
     height: 38rem;
 
-    @include mq(md) {
-      &__header {
-        h2 {
-          font-size: var(--fs-500);
-        }
+    &__header {
+      h2 {
+        font-size: var(--fs-500);
       }
-
     }
   }
 

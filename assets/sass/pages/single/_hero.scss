@@ -1,0 +1,12 @@
+@use "../../abstracts" as *;
+
+.hero{
+  //breakpoint tablet
+  @include mq(md) {
+    &__header {
+      h2 {
+        font-size: var(--fs-400);
+      }
+    }
+  }
+}
